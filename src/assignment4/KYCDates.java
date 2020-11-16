@@ -1,16 +1,11 @@
 package assignment4;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.util.Scanner;
 
 public class KYCDates {
-    private static DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-
     private static void getFormDates(String annvDate, String currDate) {
 
         LocalDate currD = LocalDate.parse(currDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
