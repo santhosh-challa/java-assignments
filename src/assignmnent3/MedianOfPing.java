@@ -23,10 +23,10 @@ public class MedianOfPing {
         Collections.sort(times);
         int totElements = times.size();
         if (totElements % 2 == 0)
-            System.out.println("Median is: " + (double) (times.get((totElements - 1) / 2)
+            System.out.println("Median is: " + (times.get((totElements - 1) / 2)
                                                          + times.get((totElements / 2))) / 2.0);
         else
-            System.out.println("Median is: " + (double) (times.get(totElements/2)));
+            System.out.println("Median is: " + (times.get(totElements/2)));
     }
 
     private static ArrayList<Double> executeCommand(ProcessBuilder pb) throws IOException {
