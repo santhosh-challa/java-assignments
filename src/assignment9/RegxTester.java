@@ -13,7 +13,7 @@ public class RegxTester {
     }
 
     private static void validateInput(String inp) {
-        Pattern pat = Pattern.compile("^[A-Z].*[.]");
+        Pattern pat = Pattern.compile("^[A-Z].*[\\.]$");
         Matcher match = pat.matcher(inp);
         if(match.find()){
             System.out.println("It starts with a capital and ends with a period!");
